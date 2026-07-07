@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Sekinah Saliu</title>
+<meta name="description" content="Interactive academic task planner for tracking assignments, deadlines, and study sessions.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-brand" aria-label="Home">
+      <span class="dot" aria-hidden="true"></span> Sekinah Saliu 
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" aria-current="page">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ok">SOC feed nominal — 0 unresolved alerts</span>
+    <span class="warn">Threat radar — new phishing campaign flagged</span>
+    <span class="ok">Forensics — disk image hash verified</span>
+    <span class="ok">Perimeter — firewall rule patched</span>
+    <span class="ok">SOC feed nominal — 0 unresolved alerts</span>
+    <span class="warn">Threat radar — new phishing campaign flagged</span>
+    <span class="ok">Forensics — disk image hash verified</span>
+    <span class="ok">Perimeter — firewall rule patched</span>
+  </div>
+</div>
+
+<main>
+
+  <section class="container page-head">
+    <span class="eyebrow">Planner</span>
+    <h1>Academic planner</h1>
+    <p>Track assignment deadlines and study sessions in one place. Tasks are kept in
+      the browser's local storage, so your list is still here the next time you visit.</p>
+  </section>
+
+  <section class="container">
+    <div class="planner-layout">
+
+      <!-- ============ ADD TASK FORM ============ -->
+      <aside class="info-card">
+        <h2 style="font-size:1.1rem; text-transform:none;">Add a task</h2>
+        <form id="taskForm" class="task-form">
+          <div class="field">
+            <label for="taskTitle">Task</label>
+            <input type="text" id="taskTitle" name="taskTitle" placeholder="e.g. COS 106 assignment 2" required>
+          </div>
+          <div class="field">
+            <label for="taskDue">Due date</label>
+            <input type="date" id="taskDue" name="taskDue">
+          </div>
+          <div class="field">
+            <label for="taskPriority">Priority</label>
+            <select id="taskPriority" name="taskPriority">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Add task</button>
+        </form>
+      </aside>
+
+      <!-- ============ TASK LIST ============ -->
+      <div>
+        <div class="task-stats" id="taskStats">
+          <span><strong id="statTotal">0</strong> total</span>
+          <span><strong id="statDone">0</strong> completed</span>
+          <span><strong id="statPending">0</strong> pending</span>
+        </div>
+        <div class="task-list" id="taskList">
+          <!-- Tasks are rendered here by script.js -->
+          <div class="empty-state" id="emptyState">No tasks yet — add your first one on the left.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="amber">◆</span> Sekinah Saliu· B.Sc. Cybersecurity · Miva Open University</div>
+      <ul class="social-row">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <p class="copyright">Copyright 2025 MIVA Open University. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
