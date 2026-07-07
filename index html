@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sekinah Saliu— Cybersecurity Student Portfolio</title>
+<meta name="description" content="Personal academic portfolio of Sekinah Saliu, B.Sc. Cybersecurity student — digital forensics, threat intelligence, and SOC analysis.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-brand" aria-label="Home">
+      <span class="dot" aria-hidden="true"></span> Sekinah Saliu 
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ STATUS TICKER (signature motion) ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ok">SOC feed nominal — 0 unresolved alerts</span>
+    <span class="warn">Threat radar — new phishing campaign flagged</span>
+    <span class="ok">Forensics — disk image hash verified</span>
+    <span class="ok">Perimeter — firewall rule patched</span>
+    <span class="ok">SOC feed nominal — 0 unresolved alerts</span>
+    <span class="warn">Threat radar — new phishing campaign flagged</span>
+    <span class="ok">Forensics — disk image hash verified</span>
+    <span class="ok">Perimeter — firewall rule patched</span>
+  </div>
+</div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+<section class="container hero">
+  <div class="hero-copy">
+    <span class="eyebrow">100 Level · B.Sc. Cybersecurity · Miva Open University</span>
+    <h1>Building secure systems, <em>one careful line</em> at a time.</h1>
+
+    <p class="hero-lede">
+      I'm Sekinah Saliu—a 100-level Cybersecurity student passionate about
+      digital forensics, threat intelligence, and uncovering vulnerabilities to
+      build a more secure digital space.
+    </p>
+
+    <div class="hero-actions">
+      <a href="projects.html" class="btn btn-primary">View my projects</a>
+      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+    </div>
+
+    <div class="hero-meta">
+    <span class="live">Open to internships</span>
+    <span>100 Level</span>
+    <span>Ogun, Nigeria</span>
+</div>
+</div>
+
+<div>
+    <div class="profile-photo">
+        <img src="Media/Project.jpg" alt="Portrait of Sekinah Saliu">
+    </div>
+</div>
+
+</section>
+  <!-- ============ LIVE STATUS GRID ============ -->
+  <section class="container">
+    <div class="status-grid">
+      <div class="status-card">
+        <span class="icon" aria-hidden="true">📡</span>
+        <span class="eyebrow">Live SOC feed</span>
+        <h3>Monitoring active</h3>
+        <p>Real-time log correlation across endpoints — zero unresolved alerts.</p>
+      </div>
+      <div class="status-card">
+        <span class="icon" aria-hidden="true">🎯</span>
+        <span class="eyebrow">Threat radar</span>
+        <h3>Tracking activity</h3>
+        <p>New phishing campaign identified, targeting .edu domains.</p>
+      </div>
+      <div class="status-card">
+        <span class="icon" aria-hidden="true">🧾</span>
+        <span class="eyebrow">Digital forensics</span>
+        <h3>Evidence verified</h3>
+        <p>Disk image acquired — SHA-256 hash integrity confirmed.</p>
+      </div>
+      <div class="status-card">
+        <span class="icon" aria-hidden="true">🗺️</span>
+        <span class="eyebrow">Network map</span>
+        <h3>Perimeter secured</h3>
+        <p>Contained — root cause traced to a misconfigured firewall rule.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BIO ============ -->
+  <section class="container">
+    <span class="eyebrow">Welcome</span>
+    <h2 style="margin-bottom:0.3em;">A little about how I got here</h2>
+    <p style="max-width:60ch; margin-bottom:2rem;">Short version: curiosity about how things break turned into a career plan for making sure they don't.</p>
+    <div class="split-cards">
+      <div class="plain-card">
+        <h3>The short bio</h3>
+        <p>I'm a 100-level Cybersecurity student at Miva Open University, passionate
+          about digital forensics, threat intelligence, and uncovering vulnerabilities
+          to build a more secure digital space. This site is my personal portfolio,
+          built with HTML, CSS, and JavaScript as part of my COS 106 Lab Assessment project.</p>
+      </div>
+      <div class="plain-card">
+        <h3>What I'm focused on right now</h3>
+        <p>I'm building a foundation in digital forensics, SOC analysis, and threat
+          intelligence, while volunteering as a coding mentor at a local secondary
+          school. Teaching younger students HTML and CSS has deepened my own
+          understanding more than anything else.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CORE SKILLS ============ -->
+  <section class="container">
+    <span class="eyebrow">What I know</span>
+    <h2 style="margin-bottom:0.3em;">Core skills</h2>
+    <p style="max-width:60ch; margin-bottom:2rem;">Technologies and tools I work with to defend systems and investigate threats.</p>
+
+    <div class="skill-group">
+      <div class="skill-group-label">Security operations</div>
+      <div class="skill-row">
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🌐</span>
+          <h4>Network Security</h4>
+          <p>Segmenting, monitoring, and hardening networks against intrusion.</p>
+          <span class="tier">Advanced</span>
+        </div>
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🔍</span>
+          <h4>Digital Forensics</h4>
+          <p>Recovering and analyzing digital evidence after a security incident.</p>
+          <span class="tier">Advanced</span>
+        </div>
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🛰️</span>
+          <h4>SOC Monitoring</h4>
+          <p>Watching live traffic and alerts to catch threats as they happen.</p>
+          <span class="tier">Intermediate</span>
+        </div>
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🕵️</span>
+          <h4>Threat Intelligence</h4>
+          <p>Tracking malicious actors and emerging attack patterns.</p>
+          <span class="tier">Advanced</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <div class="skill-group-label">Programming &amp; tools</div>
+      <div class="skill-row">
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🐍</span>
+          <h4>Python</h4>
+          <p>Writing scripts for automation, log parsing, and security tooling.</p>
+          <span class="tier">Security scripting</span>
+        </div>
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🐧</span>
+          <h4>Linux &amp; CLI</h4>
+          <p>Comfortable navigating, scripting, and hardening Linux systems.</p>
+          <span class="tier">Advanced</span>
+        </div>
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🔀</span>
+          <h4>Git &amp; GitHub</h4>
+          <p>Version control, branching, and collaborative code review.</p>
+          <span class="tier">Version control</span>
+        </div>
+        <div class="skill-card">
+          <span class="icon" aria-hidden="true">🧰</span>
+          <h4>VS Code</h4>
+          <p>My daily driver for scripting, debugging, and documentation.</p>
+          <span class="tier">Advanced</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-block">
+      <span class="media-label">🎤 Audio Introduction — <span class="who">Sekinah Saliu</span></span>
+      <audio controls preload="none">
+        <!-- Add your own recorded introduction at this path, e.g. assets/audio/welcome-note.mp3 -->
+        <source src="assets/audio/welcome-note.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- ============ CORE EXPERTISE ============ -->
+  <section class="section-invert">
+    <div class="container">
+      <span class="eyebrow">Core expertise</span>
+      <h2 style="margin-bottom:0.3em;">Where I focus my energy</h2>
+      <p style="max-width:60ch; margin-bottom:2rem;">Four areas I'm actively building toward as a cybersecurity student.</p>
+      <div class="focus-row">
+        <div class="focus-card">
+          <h3>Digital Forensics</h3>
+          <p>Recovering, preserving, and analyzing digital evidence after an incident.</p>
+        </div>
+        <div class="focus-card">
+          <h3>Threat Intelligence</h3>
+          <p>Tracking attacker behavior and emerging threats before they strike.</p>
+        </div>
+        <div class="focus-card">
+          <h3>SOC Operations</h3>
+          <p>Monitoring live traffic and alerts to catch intrusions as they happen.</p>
+        </div>
+        <div class="focus-card">
+          <h3>Network Defense</h3>
+          <p>Segmenting, hardening, and securing infrastructure against attack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECURITY PRINCIPLES ============ -->
+  <section class="container" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">What guides me</span>
+    <h2 style="margin-bottom:1.5rem;">Security principles</h2>
+    <div class="pill-row">
+      <span class="pill">🔓 Zero Trust</span>
+      <span class="pill">🛡️ Defense in Depth</span>
+      <span class="pill">🔑 Least Privilege</span>
+      <span class="pill">👁️ Continuous Vigilance</span>
+      <span class="pill">⚖️ Ethical Responsibility</span>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="container">
+    <span class="eyebrow">By the numbers</span>
+    <h2 style="margin-bottom:1.5rem;">Practice &amp; learning so far</h2>
+    <div class="stat-row">
+      <div class="stat-card"><div class="stat-num">3+</div><div class="stat-label">Projects built</div></div>
+      <div class="stat-card"><div class="stat-num">25+</div><div class="stat-label">CTF challenges attempted</div></div>
+      <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Security scripts written</div></div>
+      <div class="stat-card"><div class="stat-num">4.71</div><div class="stat-label">Current GPA</div></div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="container">
+    <span class="eyebrow">Credentials</span>
+    <h2 style="margin-bottom:0.3em;">Certifications</h2>
+    <p style="max-width:60ch; margin-bottom:2rem;">Currently studying toward these — added here as goals, not yet earned.</p>
+    <div class="cert-row">
+      <div class="cert-card">
+        <span class="cert-badge" aria-hidden="true">🛡️</span>
+        <div>
+          <h4>CompTIA Security+</h4>
+          <span class="cert-status progress">In progress</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <span class="cert-badge" aria-hidden="true">🎯</span>
+        <div>
+          <h4>Certified Ethical Hacker (CEH)</h4>
+          <span class="cert-status">Planned</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <span class="cert-badge" aria-hidden="true">📶</span>
+        <div>
+          <h4>Cisco CyberOps Associate</h4>
+          <span class="cert-status">Planned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUOTE ============ -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>"Security isn't a product you install — it's a discipline you practice, one careful decision at a time."</blockquote>
+      <cite>— Sekinah Saliu</cite>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="amber">◆</span> Sekinah Saliu· B.Sc. Cybersecurity · Miva Open University</div>
+      <ul class="social-row">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <p class="copyright">Copyright 2026 Sekinah Saliu. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
